@@ -1,0 +1,8 @@
+#Files
+input.txt
+output.txt
+
+# Executables
+*.exe
+*.out
+*.app
