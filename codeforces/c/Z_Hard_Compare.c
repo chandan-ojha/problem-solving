@@ -5,13 +5,16 @@ int main()
     int a, b, c, d;
     scanf("%d %d %d %d", &a, &b, &c, &d);
 
-    if (pow(a, b) > pow(c, d))
+    int p1 = pow(a, b);
+    int p2 = pow(c, d);
+
+    if (p1 > p2)
     {
-        printf("YES\n");
+        printf("YES");
     }
     else
     {
-        printf("NO\n");
+        printf("NO");
     }
     return 0;
 }
