@@ -28,7 +28,7 @@ int main()
 
     printf("%s\n", c);
 
-    int temp = a[0];
+    char temp = a[0];
 
     a[0] = b[0];
 
