@@ -1,6 +1,4 @@
-// TODO
 #include <stdio.h>
-#include <string.h>
 int main()
 {
     char x[21], y[21];
@@ -8,16 +6,40 @@ int main()
     scanf("%s", x);
     scanf("%s", y);
 
-    int xl = strlen(x);
-    int yl = strlen(y);
+    int i = 0;
 
-    if (xl <= yl)
+    while (1)
     {
-        printf("%s\n", x);
-    }
-    else
-    {
-        printf("%s\n", y);
+        if (x[i] == '\0' && y[i] == '\0')
+        {
+            printf("%s", x);
+            break;
+        }
+        else if (x[i] == '\0')
+        {
+            printf("%s", x);
+            break;
+        }
+        else if (y[i] == '\0')
+        {
+            printf("%s", y);
+            break;
+        }
+
+        if (x[i] == y[i])
+        {
+            i++;
+        }
+        else if (x[i] <= y[i])
+        {
+            printf("%s", x);
+            break;
+        }
+        else
+        {
+            printf("%s", y);
+            break;
+        }
     }
 
     return 0;
