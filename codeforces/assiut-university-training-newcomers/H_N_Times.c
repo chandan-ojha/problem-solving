@@ -27,7 +27,6 @@ int main()
         n_times();
         printf("\n");
     }
-    
 
     return 0;
 }
