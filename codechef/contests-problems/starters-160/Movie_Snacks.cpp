@@ -1,4 +1,4 @@
-// Problem link: https://www.codechef.com/START160D/problems/MOVPR
+// Problem link: https://www.codechef.com/problems/MOVPR
 #include <bits/stdc++.h>
 using namespace std;
 int main()
